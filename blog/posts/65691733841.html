@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<meta charset=utf-8>
+<title>Now, Today and Here</title>
+<link rel=stylesheet href=../backup.css>
+
+<body class=post>
+
+<header>
+</header>
+<article class=text id=p-65691733841>
+<header>
+<p><time datetime=2013-11-01T13:57:01Z>11/01/13 06:57:01</time>
+<a class=llink href=../posts/65691733841.html>¶</a>
+<a href=https://tmblr.co/ZwfHTyzBY4zH>●</a>
+</header>
+<h2>QX10  packet tcpdump.</h2>
+<p>당연히 와이파이되는 머신을 가졌으니 데이터가 어떻게 오고가는지좀 보기위해&hellip; 맥을 켰는데 와샥이 안깔려 있었다.</p>
+<p>그래서 그냥 간단하게 tcpdump.UDP로 기계에서 무식하게 쏘는데 대충 이런식. lengths는 500언저리에서 왔다갔다 한다. 아마 규칙이 있겠지만 와샥 깔고나서&hellip;. </p>
+<p>22:44:35.466895 IP 10.0.0.1.64321 &gt; 239.255.255.250.1900: UDP, length 454<br/>    0x0000:  4500 01e2 0000 4000 0411 7b10 0a00 0001  E&hellip;..@&hellip;{&hellip;..<br/>    0x0010:  efff fffa fb41 076c 01ce c0c9 4e4f 5449  &hellip;..A.l&hellip;.NOTI<br/>    0x0020:  4659 202a 2048 5454 502f 312e 310d 0a48  FY.*.HTTP/1.1..H<br/>    0x0030:  4f53 543a 2032 3339 2e32 3535 2e32 3535  OST:.239.255.255<br/>    0x0040:  2e32 3530 3a31 3930 300d 0a43 4143 4845  .250:1900..CACHE<br/>    0x0050:  2d43 4f4e 5452 4f4c 3a20 6d61 782d 6167  -CONTROL:.max-ag<br/>    0x0060:  653d 3138 3030 0d0a 4c4f 4341 5449 4f4e  e=1800..LOCATION<br/>    0x0070:  3a20 6874 7470 3a2f 2f31 302e 302e 302e  :.http://10.0.0.<br/>    0x0080:  313a 3634 3332 312f 446d 7352 6d74 4465  1:64321/DmsRmtDe<br/>    0x0090:  7363 2e78 6d6c 0d0a 4e54 3a20 7572 6e3a  sc.xml..NT:.urn:<br/>    0x00a0:  7363 6865 6d61 732d 736f 6e79 2d63 6f6d  schemas-sony-com<br/>    0x00b0:  3a73 6572 7669 6365 3a53 6361 6c61 7257  :service:ScalarW<br/>    0x00c0:  6562 4150 493a 310d 0a4e 5453 3a20 7373  ebAPI:1..NTS:.ss<br/>    0x00d0:  6470 3a61 6c69 7665 0d0a 5345 5256 4552  dp:alive..SERVER<br/>    0x00e0:  3a20 5550 6e50 2f31 2e30 2053 6f6e 7949  :.UPnP/1.0.SonyI<br/>    0x00f0:  6d61 6769 6e67 4465 7669 6365 2f31 2e30  magingDevice/1.0<br/>    0x0100:  0d0a 5553 4e3a 2075 7569 643a 3030 3030  ..USN:.</p>
+<p>uuid가 이쪽에 있는데 가려야지&hellip;</p>
+<p><br/>    0x0130:  3a3a 7572 6e3a 7363 6865 6d61 732d 736f  ::urn:schemas-so<br/>    0x0140:  6e79 2d63 6f6d 3a73 6572 7669 6365 3a53  ny-com:service:S<br/>    0x0150:  6361 6c61 7257 6562 4150 493a 310d 0a58  calarWebAPI:1..X<br/>    0x0160:  2d41 562d 5068 7973 6963 616c 2d55 6e69  -AV-Physical-Uni<br/>    0x0170:  742d 496e 666f 3a20 7061 3d22 223b 2070  t-Info:.pa=&ldquo;&rdquo;;.p<br/>    0x0180:  6c3d 3b0d 0a58 2d41 562d 5365 7276 6572  l=;..X-AV-Server<br/>    0x0190:  2d49 6e66 6f3a 2061 763d 352e 303b 2068  -Info:.av=5.0;.h<br/>    0x01a0:  6e3d 2222 3b20 636e 3d22 536f 6e79 2043  n=&ldquo;&rdquo;;.cn=&ldquo;Sony.C<br/>    0x01b0:  6f72 706f 7261 7469 6f6e 223b 206d 6e3d  orporation&rdquo;;.mn=<br/>    0x01c0:  2253 6f6e 7949 6d61 6769 6e67 4465 7669  &ldquo;SonyImagingDevi<br/>    0x01d0:  6365 223b 206d 763d 2231 2e30 223b 0d0a  ce&rdquo;;.mv=&ldquo;1.0&rdquo;;..<br/>    0x01e0:  0d0a                                     ..</p>
+<p>이상한점은. 아이폰에서는 암호를 넣어야하지만 맥에어에서는 요구하지 않았다. 패킷도 제대로 가는것 같은데&hellip; -ㅂ-&hellip;?!</p>
+<p>아마 데이터에는 영상이 있을것 같긴한데, 이런식이라면 카메라를 전원에 물리고 전원을 켠 후에 프록시에 물리고 그 프록시에 접근하면 현재 영상이 보일듯&hellip; &hellip; 궃이 이렇게 안써도 되는 이야기긴 하겠지만 초 고화질 cctv가 될듯한 느낌. 여튼 dump해본김에 남김 &lsquo;ㅅ&rsquo;</p>
+<p>근데 API가 http처럼 구현되어있나봉가. http/1.1 이라니..</p>
+<p>역시 UDP가 가장 만만한건가. 하긴뭐. 받으면 좋은거고 못받으면 마는거고&hellip;. =ㅅ= 음. 아마 데스크탑 프로그램도 있는것 같은데. 'ㅅ&rsquo;..</p>
+
+<p>컴터에다 물려놓으니까 ㅋㅋㅋㅋ 구글링이 안되서 핸드폰검색함 ㅋㅋㅋㅋ</p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+<footer><a href=http://blog.bloodevil.com/tagged/sony%20qx10>#sony qx10</a>
+</footer>
+</article>
